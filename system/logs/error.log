@@ -1,0 +1,1 @@
+2015-03-10 17:18:13 - PHP Warning:  ftp_login(): This is a private system - No anonymous login in /Applications/MAMP/htdocs/ecc/admin/controller/extension/installer.php on line 289
