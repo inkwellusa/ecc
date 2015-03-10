@@ -2,7 +2,29 @@
 CUSTOM.SCSS
 */
 
+/*
+VARIABLES
+*/
 
-$white: #FFF;
 
-body {background: $white;}
+/*
+COLORS
+*/
+$ecc-red-main: #ED1C24;
+$ecc-red-darkest: #A32929;
+$ecc-red-dark: #BD2F2A;
+$ecc-red-light: #E84F3C;
+$ecc-red-lightest: #F0A693;
+
+/*
+FONT FACE
+*/
+
+#top {
+	
+	background-color: $ecc-red-main;
+	text-shadow: none;
+	button {text-shadow: none; }
+	span {color: #FFF;}
+	i { color: #FFF;}
+}

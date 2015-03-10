@@ -1,1 +1,2 @@
 2015-03-10 17:18:13 - PHP Warning:  ftp_login(): This is a private system - No anonymous login in /Applications/MAMP/htdocs/ecc/admin/controller/extension/installer.php on line 289
+2015-03-10 21:08:37 - PHP Notice:  Undefined variable: text_edit in /Applications/MAMP/htdocs/ecc/admin/view/template/setting/setting.tpl on line 29

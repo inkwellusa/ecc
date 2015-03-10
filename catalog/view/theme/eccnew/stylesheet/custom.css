@@ -1,7 +1,23 @@
 /*
 CUSTOM.SCSS
 */
-body {
-  background: #FFF; }
+/*
+VARIABLES
+*/
+/*
+COLORS
+*/
+/*
+FONT FACE
+*/
+#top {
+  background-color: #ED1C24;
+  text-shadow: none; }
+  #top button {
+    text-shadow: none; }
+  #top span {
+    color: #FFF; }
+  #top i {
+    color: #FFF; }
 
 /*# sourceMappingURL=custom.css.map */
