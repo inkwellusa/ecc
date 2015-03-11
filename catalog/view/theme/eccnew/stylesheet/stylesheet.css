@@ -343,7 +343,7 @@ footer h5 {
 	padding: 0;
 }
 .breadcrumb > li:after {
-	content: '';
+	/*content: '';
 	display: block;
 	position: absolute;
 	top: -3px;
@@ -355,7 +355,7 @@ footer h5 {
 	-webkit-transform: rotate(-45deg);
 	-moz-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+	transform: rotate(-45deg);*/
 }
 .pagination {
 	margin: 0;

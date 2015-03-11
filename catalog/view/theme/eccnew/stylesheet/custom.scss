@@ -1,10 +1,10 @@
-/*
+/********
 CUSTOM.SCSS
-*/
+*********/
 
-/*
+/********
 VARIABLES
-*/
+*********/
 
 
 /*
@@ -16,25 +16,265 @@ $ecc-red-dark: #BD2F2A;
 $ecc-red-light: #E84F3C;
 $ecc-red-lightest: #F0A693;
 
+$ecc-grey-main: #646469;
+$ecc-grey-dark: #555759;
+$ecc-grey-darkest: #1D242B;
+$ecc-grey-light: #8F9C9C;
+$ecc-grey-lightest: #C3C5C7;
+
+$ecc-grey-superlight: #EEE;
+
+$backgroud-hover: $ecc-red-light;
+
 /*
-FONT FACE
+MIXINS
 */
 
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+
+	-webkit-box-shadow:$top $left $blur $color #{$inset};
+	-moz-box-shadow:$top $left $blur $color #{$inset};
+	box-shadow:$top $left $blur $color #{$inset};
+}
+
+@mixin center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+/********
+FONT FACE
+*********/
+
 @font-face {
-	font-family: 'gotham-bold';
-	src: url('fonts/bold/Gotham-Bold.eot');
-	src: local('☺'), url('fonts/bold/Gotham-Bold.woff') format('woff'), url('fonts/bold/Gotham-Bold.ttf') format('truetype'), url('fonts/bold/Gotham-Bold.svg') format('svg');
+	font-family: 'HN-Roman';
+	src: url('fonts/HN-Roman/HN-Roman.otf');
+	src: local('☺'), url('fonts/HN-Roman/HN-Roman.woff') format('woff'), url('fonts/HN-Roman/HN-Roman.ttf') format('truetype'), url('fonts/HN-Roman/HN-Roman.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'HN-Thin';
+	src: url('fonts/HN-Thin/HN-Thin.otf');
+	src: local('☺'), url('fonts/HN-Thin/HN-Thin.woff') format('woff'), url('fonts/HN-Thin/HN-Thin.ttf') format('truetype'), url('fonts/HN-Thin/HN-Thin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'HN-Bold';
+	src: url('fonts/HN-Bold/HN-Bold.otf');
+	src: local('☺'), url('fonts/HN-Bold/HN-Bold.woff') format('woff'), url('fonts/HN-Bold/HN-Bold.ttf') format('truetype'), url('fonts/HN-Bold/HN-Bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html {
+	min-width: 320px;
+}
+
+body {
+	font-family: 'HN-Roman';
+	font-size: 14px;
+}
+h1, h2, h3, h4, h5 {
+	font-family: "HN-Bold";
+}
+
+a { color: $ecc-red-main;
+	&:hover {color: $ecc-red-lightest;}
+}
 
 #top {
-	
 	background-color: $ecc-red-main;
 	text-shadow: none;
+	text-shadow: none;
 	button {text-shadow: none; }
-	span {color: #FFF;}
-	i { color: #FFF;}
+	span {text-shadow: none; color: #FFF;}
+	i {text-shadow: none;  color: #FFF;}
 }
+
+#heart {width: 50px; padding: 5px; display: none;}
+
+#btn-search {
+	background: $ecc-red-darkest;
+}
+
+#cart > .btn {
+	background: $ecc-red-darkest;
+	border-color: $ecc-red-darkest;
+	color: #FFF;
+}
+
+//categories navbar
+#menu {
+
+	background-color: $ecc-red-main;
+	border: solid $ecc-red-main 1px;
+	// background: transparent;
+	// border: none;
+
+	.navbar-header, .navbar-ex1-collapse {
+		background-color: $ecc-red-main;
+		border: solid $ecc-red-main 1px;
+		// background: transparent;
+		// border: none;
+		text-shadow: none;
+		span { text-shadow:none;}
+		box-shadow: none;
+		ul li a  { color: #FFF; }
+	}
+
+	.btn-navbar {
+		font-size: 15px;
+		color: #FFF;
+		background: $ecc-red-main;
+		// background: transparent;
+		// border: none;
+		text-transform: uppercase;
+		border: none;
+		box-shadow: none;
+		&:hover {background: transparent;}
+	}
+}
+#category { text-shadow: none;}
+
+/*
+BREADCRUMBS
+*/
+
+.breadcrumb {
+	background: transparent;
+	border: none;
+	li{
+		background: transparent;
+		&:after{
+			color: $ecc-red-main;
+			content: ' / ';
+			position: absolute;
+			font-size: 24px;
+			top: 5px;
+			right: 5px;
+			width: 0;
+			height: 0;
+			border-right: none;
+			border-bottom: none;
+		}
+	}
+}
+
+/********
+SIDE NAVS
+********/
+
+.list-group {
+	a {
+		&.active {
+			background-color: $ecc-grey-superlight;
+			text-shadow: none;
+		}
+		&.active:hover, &:hover{
+			background-color: $ecc-red-main;
+			color: #FFF;
+			text-shadow: none;
+		}
+	}
+}	
+// .list-group a.active, .list-group a.active:hover, .list-group a:hover {
+// 	color: #444444;
+// 	background:$ecc-red-lightest;
+// 	border: 1px solid #DDDDDD;
+// 	text-shadow: 0 1px 0 #FFF;
+// }
+
+.dropdown-menu li > a:hover {
+	text-decoration: none;
+	color: #ffffff;
+	background-color: black;
+	background-repeat: repeat-x;
+}
+
+
  
+#logo { text-align: center; margin: 0 auto; width: 400px;}
+#logo2 { display: none; text-align: center; margin: -10px auto; width: 300px;}
+
+footer {
+	background-color: $ecc-red-main;
+
+	h4 {font-family: 'HN-Bold'; color: #FFF;}
+	li a {color: #FFF;}
+	font-family: 'HN-Thin';
+}
+
+/*****************
+BOOTSTRAP OVERRIDE
+*****************/
+
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus,
+textarea:focus, {   
+  border-color: $ecc-grey-lightest;
+  box-shadow: 0 1px 1px $ecc-grey-lightest inset, 0 0 5px $ecc-grey-lightest;
+  outline: 0 none;
+}
+
+/*
+button styles
+*/
+
+button, .button-group > button, .btn {
+	color: #FFF;
+	background-color: $ecc-red-main;
+	background: $ecc-red-main;
+	border-color: $ecc-red-main;
+
+	&:hover, &:active {
+		background-color: $ecc-red-light;
+		color: #FFF;
+		border-color: $ecc-red-light;
+	}
+
+	//@include center;
+
+}
+
+/************
+MEDIA QUERIES
+************/
+
+@media (max-width: 767px) {
+	#logo {
+		display: none;
+	}
+
+	#logo2 {
+		display: block;
+	}
+	#heart {display: inline-block;}
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (max-width: 1200px) {}
+
+
+
+
