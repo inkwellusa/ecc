@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 CUSTOM.SCSS
 */
@@ -10,6 +11,12 @@ COLORS
 /*
 FONT FACE
 */
+@font-face {
+  font-family: 'gotham-bold';
+  src: url("fonts/bold/Gotham-Bold.eot");
+  src: local("☺"), url("fonts/bold/Gotham-Bold.woff") format("woff"), url("fonts/bold/Gotham-Bold.ttf") format("truetype"), url("fonts/bold/Gotham-Bold.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 #top {
   background-color: #ED1C24;
   text-shadow: none; }
