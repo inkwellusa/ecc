@@ -26,7 +26,7 @@
           <?php if ($thumb || $images) { ?>
           <ul class="thumbnails">
             <?php if ($thumb) { ?>
-            <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+            <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img  id ="main-product-thumb" src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
             <?php } ?>
             <?php if ($images) { ?>
             <?php foreach ($images as $image) { ?>
@@ -176,12 +176,24 @@
             <h3><?php echo $text_option; ?></h3>
             <?php foreach ($options as $option) { ?>
             <?php if ($option['type'] == 'select') { ?>
+
+
+
+            <?php 
+              /* EDIT 03.12.15 MM
+              If the option is "Color", add coloroption class to each option 
+              */
+              if ($option['name']=="Color") {
+              $coloroption = "coloroption";
+              }
+            ?>
+
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
               <select name="option[<?php echo $option['product_option_id']; ?>]" id="input-option<?php echo $option['product_option_id']; ?>" class="form-control">
                 <option value=""><?php echo $text_select; ?></option>
                 <?php foreach ($option['product_option_value'] as $option_value) { ?>
-                <option value="<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['name']; ?>
+                <option class="<?php echo $coloroption; ?>" rel="<?php echo $option_value['name']; ?>" value="<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['name']; ?>
                 <?php if ($option_value['price']) { ?>
                 (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
                 <?php } ?>
@@ -232,8 +244,18 @@
               <div id="input-option<?php echo $option['product_option_id']; ?>">
                 <?php foreach ($option['product_option_value'] as $option_value) { ?>
                 <div class="radio">
+
+                  <?php
+                    /* EDIT 03.12.15 MM
+                      If it's a logo option, assign it the logooption class.
+                    */
+                    if ($option['name']=="Logo") {
+                    $logooption = "logooption";
+                    //echo $option_value['image_og'];
+                  } ?>
+
                   <label>
-                    <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" />
+                    <input class="<?php echo $logooption; ?>" type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" rel="<?php echo $option_value['name']?>" />
                     <img src="<?php echo $option_value['image']; ?>" alt="<?php echo $option_value['name'] . ($option_value['price'] ? ' ' . $option_value['price_prefix'] . $option_value['price'] : ''); ?>" class="img-thumbnail" /> <?php echo $option_value['name']; ?>
                     <?php if ($option_value['price']) { ?>
                     (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
@@ -596,6 +618,73 @@ $(document).ready(function() {
 			enabled:true
 		}
 	});
+
+  /*
+  Change product image based on color and logo selection
+  */
+  /*
+  global variables 
+  */
+  var color = "";
+  var logo = "";
+  //var base = "http://localhost:8888/ecc/";
+  //var base = "http://localhost:8888/ecc/image/catalog/demo/logotest/";
+  function createNewSRC(picsrc, colorValue, logoValue){
+    var logoNum = '_1.jpg';
+    switch(logoValue) {
+      case 'one':
+        logoNum = '_1.jpg';
+        break;
+      case 'two':
+        logoNum = '_2.jpg';
+        break;
+      case 'three':
+        logoNum = '_3.jpg';
+        break;
+      case 'four':
+        logoNum = '_4.jpg';
+        break;
+    }
+
+    picsrc = picsrc + "_" + colorValue + logoNum;
+    alert(picsrc);
+    //$("#main-product-thumb").attr('src', picsrc);
+  }
+
+  function checkValues(colorValue, logoValue) {
+    if((colorValue) && (logoValue))  {
+      src = $('#main-product-thumb').attr('src');
+      createNewSRC(src, colorValue, logoValue);
+      //alert(src);
+    } 
+  }
+
+
+/*
+listen for changes on the color drop down
+*/
+$('.coloroption').click(
+  function() {
+    var newColor = $(this).attr('rel');
+    //alert(newColor);
+    color = newColor;
+    checkValues(color, logo);
+  });
+
+/*
+listen for changes on the logo radio select
+*/
+$('.logooption').change(
+  function() {
+    var newLogo = $(this).attr('rel');
+    //alert(newLogo);
+    logo = newLogo;
+    checkValues(color, logo);
+
+  });
+
 });
-//--></script> 
+
+
+</script> 
 <?php echo $footer; ?>

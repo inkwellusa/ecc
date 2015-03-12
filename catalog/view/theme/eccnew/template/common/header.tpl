@@ -40,6 +40,7 @@
 <?php echo $google_analytics; ?>
 </head>
 <body class="<?php echo $class; ?>">
+  
 <nav id="top">
   <div class="container">
     <?php echo $language; ?>
