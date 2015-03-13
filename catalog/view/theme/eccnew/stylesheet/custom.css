@@ -147,6 +147,30 @@ SIDE NAVS
   background-color: black;
   background-repeat: repeat-x; }
 
+#cart .dropdown-menu {
+  background: #FFF;
+  z-index: 1001;
+  box-shadow: none;
+  border: 1px solid #C3C5C7;
+  width: auto;
+  padding: 10px 10px 0 10px;
+  text-align: right;
+  float: right; }
+  #cart .dropdown-menu p a:hover {
+    text-decoration: underline; }
+  #cart .dropdown-menu li table tbody {
+    border: none; }
+    #cart .dropdown-menu li table tbody tr:hover {
+      background-color: #FFF; }
+    #cart .dropdown-menu li table tbody tr td {
+      margin: 0;
+      border: none;
+      background: #FFF;
+      border-bottom: 1px solid #C3C5C7;
+      padding: 20px 0 20px 0; }
+  #cart .dropdown-menu li div table tbody td td {
+    border: none; }
+
 #logo {
   text-align: center;
   margin: 0 auto 30px auto;
@@ -204,6 +228,25 @@ button, .button-group > button, .btn {
     background-color: #E84F3C;
     color: #FFF;
     border-color: #E84F3C; }
+
+.product-list .product-thumb .button-group {
+  border: none;
+  margin: 10px;
+  text-align: center; }
+
+.product-thumb .button-group button {
+  width: 100%;
+  background-color: #ED1C24;
+  color: #FFF;
+  border: 1px solid #ED1C24;
+  text-align: center;
+  text-transform: uppercase; }
+  .product-thumb .button-group button:hover {
+    color: #FFF;
+    background-color: #E84F3C;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #E84F3C; }
 
 /***********
 OWL CAROUSEL

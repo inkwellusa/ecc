@@ -218,6 +218,61 @@ SIDE NAVS
 }
 
 
+
+
+#cart{
+	.dropdown-menu {
+		background: #FFF;
+		z-index: 1001;
+		box-shadow: none;
+		border: 1px solid $ecc-grey-lightest;
+		width: auto;
+		padding: 10px 10px 0 10px;
+		text-align: right;
+		float: right;
+
+		p{
+			a {
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+		li {
+			table{
+				tbody {
+					border: none;
+					tr {
+						&:hover{
+							background-color: #FFF;
+						}
+						td {
+							margin: 0;
+							border: none;
+							background: #FFF;
+							border-bottom: 1px solid $ecc-grey-lightest;
+							padding: 20px 0 20px 0;
+						}
+					}
+				}
+			}
+
+			div{
+				table {
+					tbody{
+						td{
+							td{
+									border: none
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+} 
+
  
 #logo { text-align: center; margin: 0 auto 30px auto; width: 400px;}
 #logo2 { display: none; text-align: center; margin: -10px auto; width: 300px;}
@@ -272,10 +327,36 @@ button, .button-group > button, .btn {
 		color: #FFF;
 		border-color: $ecc-red-light;
 	}
-
-	//@include center;
-
 }
+
+.product-list .product-thumb .button-group {
+	border: none;
+	margin: 10px;
+	text-align: center;
+}
+
+
+.product-thumb {
+	.button-group{ 
+		button {
+			width: 100%;
+			background-color: $ecc-red-main;
+			color: #FFF;
+			// line-height: 38px;
+			border: 1px solid $ecc-red-main;
+			text-align: center;
+			text-transform: uppercase;
+			&:hover{
+				color: #FFF;
+				background-color: $ecc-red-light;
+				text-decoration: none;
+				cursor: pointer;
+				border: 1px solid $ecc-red-light;
+			}
+		}
+	}
+}
+
 
 /***********
 OWL CAROUSEL
