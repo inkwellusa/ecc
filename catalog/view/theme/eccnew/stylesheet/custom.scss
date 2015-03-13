@@ -21,7 +21,7 @@ $ecc-red-lightest: #F0A693;
 $ecc-grey-main: #646469;
 $ecc-grey-dark: #555759;
 $ecc-grey-darkest: #1D242B;
-$ecc-grey-light: #8F9C9C;
+$ecc-grey-light: #8F9C9C; 
 $ecc-grey-lightest: #C3C5C7;
 
 $ecc-grey-superlight: #EEE;
@@ -89,12 +89,13 @@ a { color: $ecc-red-main;
 }
 
 #top {
-	background-color: $ecc-red-main;
+	background-color: $ecc-grey-superlight;
 	text-shadow: none;
 	text-shadow: none;
 	button {text-shadow: none; }
 	span {text-shadow: none; color: #FFF;}
 	i {text-shadow: none;  color: #FFF;}
+	display: none;
 }
 
 #heart {width: 50px; padding: 5px; display: none;}
@@ -140,6 +141,17 @@ a { color: $ecc-red-main;
 		&:hover {background: transparent;}
 	}
 }
+ul{
+	.dropdown-menu {
+		background: $ecc-red-main;
+		li {
+			&:hover {
+			background-color: black;
+			}
+		}
+	}
+}
+
 #category { text-shadow: none;}
 
 /*
@@ -152,7 +164,7 @@ BREADCRUMBS
 	li{
 		background: transparent;
 		&:after{
-			color: $ecc-red-main;
+			color: $ecc-grey-superlight;
 			content: ' / ';
 			position: absolute;
 			font-size: 24px;
@@ -173,7 +185,7 @@ SIDE NAVS
 .list-group {
 	a {
 		&.active {
-			background-color: $ecc-grey-superlight;
+			background-color: $ecc-grey-light;
 			text-shadow: none;
 		}
 		&.active:hover, &:hover{
@@ -199,7 +211,7 @@ SIDE NAVS
 
 
  
-#logo { text-align: center; margin: 0 auto; width: 400px;}
+#logo { text-align: center; margin: 0 auto 30px auto; width: 400px;}
 #logo2 { display: none; text-align: center; margin: -10px auto; width: 300px;}
 
 footer {
@@ -256,13 +268,26 @@ button, .button-group > button, .btn {
 
 }
 
+/***********
+OWL CAROUSEL
+***********/
+
+#owl-demo .item{
+  margin: 5px;
+}
+#owl-demo .item img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /************
 MEDIA QUERIES
 ************/
 
 @media (max-width: 767px) {
 	#logo {
-		display: none;
+		// display: none;
 	}
 
 	#logo2 {

@@ -27,6 +27,17 @@
 <link href="catalog/view/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen" />
 <script src="catalog/view/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <link href="catalog/view/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<!--OWL CAROUSEL-->
+<script src="catalog/view/javascript/owl/owl-carousel/owl.carousel.js"/></script>
+<!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="catalog/view/javascript/owl/owl-carousel/owl.carousel.css" type="text/css" >
+<!-- Default Theme -->
+<link rel="stylesheet" href="catalog/view/javascript/owl/owl-carousel/owl.theme.css" type="text/css" >
+<!--CUSTOM JS-->
+<script src="catalog/view/javascript/custom.js" type="text/javascript"></script>
+
+
 <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
 <link href="catalog/view/theme/default/stylesheet/stylesheet.css" rel="stylesheet">
 <link href="catalog/view/theme/eccnew/stylesheet/custom.css" rel="stylesheet">
@@ -45,29 +56,15 @@
   <div class="container">
     <?php echo $language; ?>
     <a href="<?php echo $home;?>">
-      <img id="heart" src="image/logos/heart-white.svg">
+      <!-- <img id="heart" src="image/logos/heart-white.svg"> -->
     </a>
     
     <div id="top-links" class="nav pull-right">
       <ul class="list-inline">
-        <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li>
+        <!-- <li><a href="<?php echo $contact; ?>"><i class="fa fa-phone"></i></a> <span class="hidden-xs hidden-sm hidden-md"><?php echo $telephone; ?></span></li> -->
        <!--  <li><a href="<?php echo $wishlist; ?>" id="wishlist-total" title="<?php echo $text_wishlist; ?>"><i class="fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_wishlist; ?></span></a></li> -->
         <li><a href="<?php echo $shopping_cart; ?>" title="<?php echo $text_shopping_cart; ?>"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_shopping_cart; ?></span></a></li>
         <li><a href="<?php echo $checkout; ?>" title="<?php echo $text_checkout; ?>"><i class="fa fa-share"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_checkout; ?></span></a></li>
-         <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <span class="hidden-xs hidden-sm hidden-md"><?php echo $text_account; ?></span> <span class="caret"></span></a>
-          <ul class="dropdown-menu dropdown-menu-right">
-            <?php if ($logged) { ?>
-            <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
-            <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
-           <!--  <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li> -->
-            <!-- <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li> -->
-            <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
-            <?php } else { ?>
-            <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
-            <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
-            <?php } ?>
-          </ul>
-        </li>
       </ul>
     </div>
   </div>
@@ -121,7 +118,23 @@
         <?php } else { ?>
         <li><a href="<?php echo $category['href']; ?>"><?php echo $category['name']; ?></a></li>
         <?php } ?>
+
         <?php } ?>
+        <li><a href="<?php echo $contact; ?>">Contact</a></li>
+        <li class="dropdown"><a href="<?php echo $account; ?>" title="<?php echo $text_account; ?>" class="dropdown-toggle" data-toggle="dropdown"><?php echo $text_account; ?> <span class="caret"></span></a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <?php if ($logged) { ?>
+            <li><a href="<?php echo $account; ?>"><?php echo $text_account; ?></a></li>
+            <li><a href="<?php echo $order; ?>"><?php echo $text_order; ?></a></li>
+           <!--  <li><a href="<?php echo $transaction; ?>"><?php echo $text_transaction; ?></a></li> -->
+            <!-- <li><a href="<?php echo $download; ?>"><?php echo $text_download; ?></a></li> -->
+            <li><a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a></li>
+            <?php } else { ?>
+            <li><a href="<?php echo $register; ?>"><?php echo $text_register; ?></a></li>
+            <li><a href="<?php echo $login; ?>"><?php echo $text_login; ?></a></li>
+            <?php } ?>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>

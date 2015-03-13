@@ -136,7 +136,7 @@
             <?php if ($manufacturer) { ?>
             <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
             <?php } ?>
-            <li><?php echo $text_model; ?> <?php echo $model; ?></li>
+            <li><?php echo $text_model; ?> <span id ="product-model"><?php echo $model; ?></span></li>
             <?php if ($reward) { ?>
             <li><?php echo $text_reward; ?> <?php echo $reward; ?></li>
             <?php } ?>
@@ -619,43 +619,48 @@ $(document).ready(function() {
 		}
 	});
 
-  /*
+  /******************************************************
   Change product image based on color and logo selection
-  */
+  *******************************************************/
+
   /*
   global variables 
   */
+
   var color = "";
   var logo = "";
-  //var base = "http://localhost:8888/ecc/";
-  //var base = "http://localhost:8888/ecc/image/catalog/demo/logotest/";
+  var base = "http://localhost:8888/ecc/image/catalog/demo/logotest/";
+  var productModel = document.getElementById("product-model").innerHTML;
   function createNewSRC(picsrc, colorValue, logoValue){
+    
     var logoNum = '_1.jpg';
     switch(logoValue) {
-      case 'one':
+      case 'AHA (EN tagline)':
         logoNum = '_1.jpg';
         break;
-      case 'two':
+      case 'AHA/ASA (EN tagline)':
         logoNum = '_2.jpg';
         break;
-      case 'three':
+      case 'AHA (SP tagline)':
         logoNum = '_3.jpg';
         break;
-      case 'four':
+      case 'AHA/ASA (SP tagline)':
         logoNum = '_4.jpg';
         break;
-    }
+      case 'AHA Instructor':
+        logoNum = '_5.jpg';
+        break;
 
-    picsrc = picsrc + "_" + colorValue + logoNum;
-    alert(picsrc);
-    //$("#main-product-thumb").attr('src', picsrc);
+    }
+    picsrc = base + productModel + "_" + colorValue + logoNum;
+    $("#main-product-thumb").attr('src', picsrc);
+    $(".thumbnail").attr('href', picsrc);
   }
 
   function checkValues(colorValue, logoValue) {
     if((colorValue) && (logoValue))  {
       src = $('#main-product-thumb').attr('src');
       createNewSRC(src, colorValue, logoValue);
-      //alert(src);
     } 
   }
 
@@ -666,7 +671,6 @@ listen for changes on the color drop down
 $('.coloroption').click(
   function() {
     var newColor = $(this).attr('rel');
-    //alert(newColor);
     color = newColor;
     checkValues(color, logo);
   });
@@ -677,7 +681,6 @@ listen for changes on the logo radio select
 $('.logooption').change(
   function() {
     var newLogo = $(this).attr('rel');
-    //alert(newLogo);
     logo = newLogo;
     checkValues(color, logo);
 

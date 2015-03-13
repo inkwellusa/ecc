@@ -17,3 +17,11 @@
 2015-03-12 22:07:12 - PHP Notice:  Undefined variable: base in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/product/product.tpl on line 630
 2015-03-12 22:07:42 - PHP Notice:  Undefined variable: base in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/product/product.tpl on line 630
 2015-03-12 22:07:46 - PHP Notice:  Undefined variable: base in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/product/product.tpl on line 630
+2015-03-13 17:28:44 - PHP Notice:  Undefined variable: base in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 15
+2015-03-13 17:29:33 - PHP Notice:  Undefined variable: base in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 15
+2015-03-13 19:38:39 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 2
+2015-03-13 19:38:47 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 12
+2015-03-13 19:39:15 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-13 19:39:43 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-13 19:40:20 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-13 19:42:49 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
