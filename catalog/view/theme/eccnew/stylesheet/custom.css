@@ -124,6 +124,12 @@ BREADCRUMBS
       border-right: none;
       border-bottom: none; }
 
+/*****
+CONTENT
+*****/
+#content {
+  min-height: auto; }
+
 /********
 SIDE NAVS
 ********/
@@ -191,7 +197,9 @@ button, .button-group > button, .btn {
   color: #FFF;
   background-color: #ED1C24;
   background: #ED1C24;
-  border-color: #ED1C24; }
+  border-color: #ED1C24;
+  text-align: center;
+  margin: 0 auto; }
   button:hover, button:active, .button-group > button:hover, .button-group > button:active, .btn:hover, .btn:active {
     background-color: #E84F3C;
     color: #FFF;

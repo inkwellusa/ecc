@@ -178,6 +178,14 @@ BREADCRUMBS
 	}
 }
 
+/*****
+CONTENT
+*****/
+
+#content {
+	min-height: auto;
+}
+
 /********
 SIDE NAVS
 ********/
@@ -257,6 +265,7 @@ button, .button-group > button, .btn {
 	background-color: $ecc-red-main;
 	background: $ecc-red-main;
 	border-color: $ecc-red-main;
+	@include center;
 
 	&:hover, &:active {
 		background-color: $ecc-red-light;
@@ -271,6 +280,7 @@ button, .button-group > button, .btn {
 /***********
 OWL CAROUSEL
 ***********/
+
 
 #owl-demo .item{
   margin: 5px;
