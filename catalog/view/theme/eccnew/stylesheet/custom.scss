@@ -98,10 +98,11 @@ a { color: $ecc-red-main;
 	display: none;
 }
 
-#heart {width: 50px; padding: 5px; display: none;}
+#heart {width: 50px; padding-bottom: 15px;}
 
 #btn-search {
 	background: $ecc-red-darkest;
+	border: solid 1px $ecc-red-darkest;
 }
 
 #cart > .btn {
@@ -146,13 +147,24 @@ ul{
 		background: $ecc-red-main;
 		li {
 			&:hover {
-			background-color: black;
+			//	background-color: $ecc-red-dark;
 			}
 		}
 	}
 }
 
+
+
+// background: rgba(0, 0, 0, 0.1);
+
+// .dropdown-menu li > a:hover {
+// 	text-decoration: none;
+// 	color: #ffffff;
+// 	background-color: white;
+// }
+
 #category { text-shadow: none;}
+#welcome-message {@include center; padding: 30px 0 30px 0;}
 
 /*
 BREADCRUMBS
@@ -246,12 +258,13 @@ SIDE NAVS
 						&:hover{
 							background-color: #FFF;
 						}
+						border: none;
 						td {
 							margin: 0;
 							border: none;
 							background: #FFF;
 							border-bottom: 1px solid $ecc-grey-lightest;
-							padding: 20px 0 20px 0;
+							padding: 20px 10px 20px 0;
 						}
 					}
 				}
@@ -326,8 +339,23 @@ button, .button-group > button, .btn {
 		background-color: $ecc-red-light;
 		color: #FFF;
 		border-color: $ecc-red-light;
+
 	}
 }
+
+
+	.alert-success {
+		background-color: $ecc-red-lightest;
+		color: #FFF;
+		a {
+			color: #FFF;
+			text-decoration: underline;
+		}
+	}
+
+/**********************
+BOOTSTRAP OVERRIDE END
+***********************/
 
 .product-list .product-thumb .button-group {
 	border: none;
@@ -384,7 +412,6 @@ MEDIA QUERIES
 	#logo2 {
 		display: block;
 	}
-	#heart {display: inline-block;}
 }
 
 @media (min-width: 768px) {
@@ -396,3 +423,13 @@ MEDIA QUERIES
 
 
 
+.dropdown{
+	ul {
+		li {
+			&:hover {
+					background-color: black;
+				}
+
+		}
+	}
+}

@@ -56,7 +56,6 @@
   <div class="container">
     <?php echo $language; ?>
     <a href="<?php echo $home;?>">
-      <!-- <img id="heart" src="image/logos/heart-white.svg"> -->
     </a>
     
     <div id="top-links" class="nav pull-right">

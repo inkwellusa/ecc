@@ -63,11 +63,11 @@ a {
 
 #heart {
   width: 50px;
-  padding: 5px;
-  display: none; }
+  padding-bottom: 15px; }
 
 #btn-search {
-  background: #A32929; }
+  background: #A32929;
+  border: solid 1px #A32929; }
 
 #cart > .btn {
   background: #A32929;
@@ -98,11 +98,14 @@ a {
 
 ul .dropdown-menu {
   background: #ED1C24; }
-  ul .dropdown-menu li:hover {
-    background-color: black; }
 
 #category {
   text-shadow: none; }
+
+#welcome-message {
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px 0 30px 0; }
 
 /*
 BREADCRUMBS
@@ -160,14 +163,16 @@ SIDE NAVS
     text-decoration: underline; }
   #cart .dropdown-menu li table tbody {
     border: none; }
-    #cart .dropdown-menu li table tbody tr:hover {
-      background-color: #FFF; }
-    #cart .dropdown-menu li table tbody tr td {
-      margin: 0;
-      border: none;
-      background: #FFF;
-      border-bottom: 1px solid #C3C5C7;
-      padding: 20px 0 20px 0; }
+    #cart .dropdown-menu li table tbody tr {
+      border: none; }
+      #cart .dropdown-menu li table tbody tr:hover {
+        background-color: #FFF; }
+      #cart .dropdown-menu li table tbody tr td {
+        margin: 0;
+        border: none;
+        background: #FFF;
+        border-bottom: 1px solid #C3C5C7;
+        padding: 20px 10px 20px 0; }
   #cart .dropdown-menu li div table tbody td td {
     border: none; }
 
@@ -229,6 +234,16 @@ button, .button-group > button, .btn {
     color: #FFF;
     border-color: #E84F3C; }
 
+.alert-success {
+  background-color: #F0A693;
+  color: #FFF; }
+  .alert-success a {
+    color: #FFF;
+    text-decoration: underline; }
+
+/**********************
+BOOTSTRAP OVERRIDE END
+***********************/
 .product-list .product-thumb .button-group {
   border: none;
   margin: 10px;
@@ -264,9 +279,8 @@ MEDIA QUERIES
 ************/
 @media (max-width: 767px) {
   #logo2 {
-    display: block; }
-
-  #heart {
-    display: inline-block; } }
+    display: block; } }
+.dropdown ul li:hover {
+  background-color: black; }
 
 /*# sourceMappingURL=custom.css.map */
