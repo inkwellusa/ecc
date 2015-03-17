@@ -9,11 +9,11 @@
       <div class="col-sm-3">
         <ul class="list-unstyled footer-links">
           <li><a href="<?php echo $contact; ?><?php echo $text_contact; ?>">Home</a></li>
-          <li><a href="http://localhost:8888/ecc/index.php?route=checkout/cart">Cart</a></li>
-          <li><a href="http://localhost:8888/ecc/index.php?route=account/account">Account</a></li>
+          <li><a href="<?php echo $base;?>index.php?route=checkout/cart">Cart</a></li>
+          <li><a href="<?php echo $base;?>index.php?route=account/account">Account</a></li>
         </ul>
       </div>
-
+      
       <div class="col-sm-3">
         <ul class="list-unstyled footer-links">
           <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
