@@ -33,7 +33,7 @@ MIXINS
 */
 
 @mixin box-shadow($top, $left, $blur, $color, $inset:"") {
-
+ 
 	-webkit-box-shadow:$top $left $blur $color #{$inset};
 	-moz-box-shadow:$top $left $blur $color #{$inset};
 	box-shadow:$top $left $blur $color #{$inset};
@@ -98,7 +98,7 @@ a { color: $ecc-red-main;
 	display: none;
 }
 
-#heart {width: 50px; padding-bottom: 15px;}
+#heart {width: 150px;}
 
 #btn-search {
 	background: $ecc-red-darkest;
@@ -292,16 +292,29 @@ SIDE NAVS
 
 footer {
 	background-color: $ecc-red-main;
-
+	hr {
+		border: 0; border-top: 1px solid $ecc-grey-lightest;
+		margin-bottom: 0 auto 25px;
+		padding: 0;
+	}
 	h4 {font-family: 'HN-Bold'; color: #FFF;}
-	li a {color: #FFF;}
+	.footer-links {
+		padding: 0 0 10px 10px;
+		list-style-type: none;
+		li {
+			padding-bottom: 5px;
+			a {font-weight: bold; color: #FFF; text-decoration: none;}
+		}
+		
+	}
+	
 	font-family: 'HN-Thin';
 }
 
 /*****************
 BOOTSTRAP OVERRIDE
 *****************/
-
+ 
 
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -357,23 +370,24 @@ button, .button-group > button, .btn {
 BOOTSTRAP OVERRIDE END
 ***********************/
 
-.product-list .product-thumb .button-group {
-	border: none;
-	margin: 10px;
-	text-align: center;
-}
-
 
 .product-thumb {
-	.button-group{ 
+	// .button-group{
+	// 	border: none;
+	// 	margin: 10px;
+	// 	text-align: center;
+	// 	// width:100px;
+ #addcartdiv{
+ 	@include center;
 		button {
-			width: 100%;
+			// width: 40%;
 			background-color: $ecc-red-main;
 			color: #FFF;
 			// line-height: 38px;
 			border: 1px solid $ecc-red-main;
 			text-align: center;
 			text-transform: uppercase;
+			@include center;
 			&:hover{
 				color: #FFF;
 				background-color: $ecc-red-light;
@@ -412,13 +426,43 @@ MEDIA QUERIES
 	#logo2 {
 		display: block;
 	}
+	#addcartdiv {
+		width: 100%;
+		button {
+			width: 100%;
+		}
+	}
+	
 }
 
 @media (min-width: 768px) {
+	#addcartdiv {
+		width: 100%;
+		button {
+			width: 40%;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	#addcartdiv {
+		width: 100%;
+		button {
+			width: 50%;
+		}
+	}
+
 
 }
 
-@media (max-width: 1200px) {}
+@media (min-width: 1200px) {
+	#addcartdiv {
+		width: 100%;
+		button {
+			width: 60%;
+		}
+	}
+}
 
 
 

@@ -124,11 +124,14 @@
                 </p>
                 <?php } ?>
               </div>
-              <div class="button-group">
-                <button type="button" class="btn" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-cart"></i> <span ><?php echo $button_cart; ?></span></button>
+              <div id ="addcartdiv">
+              <button type="button" class="btn" onclick="cart.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-shopping-cart"></i> <span ><?php echo $button_cart; ?></span></button>
+              </div>
+             <!--  <div class="button-group"> -->
+                
                <!--  <button type="button" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-heart"></i></button>
                 <button type="button" data-toggle="tooltip" title="<?php echo $button_compare; ?>" onclick="compare.add('<?php echo $product['product_id']; ?>');"><i class="fa fa-exchange"></i></button> -->
-              </div>
+              <!-- </div> -->
             </div>
           </div>
         </div>

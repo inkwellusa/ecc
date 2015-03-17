@@ -62,8 +62,7 @@ a {
     color: #FFF; }
 
 #heart {
-  width: 50px;
-  padding-bottom: 15px; }
+  width: 150px; }
 
 #btn-search {
   background: #A32929;
@@ -190,11 +189,23 @@ SIDE NAVS
 footer {
   background-color: #ED1C24;
   font-family: 'HN-Thin'; }
+  footer hr {
+    border: 0;
+    border-top: 1px solid #C3C5C7;
+    margin-bottom: 0 auto 25px;
+    padding: 0; }
   footer h4 {
     font-family: 'HN-Bold';
     color: #FFF; }
-  footer li a {
-    color: #FFF; }
+  footer .footer-links {
+    padding: 0 0 10px 10px;
+    list-style-type: none; }
+    footer .footer-links li {
+      padding-bottom: 5px; }
+      footer .footer-links li a {
+        font-weight: bold;
+        color: #FFF;
+        text-decoration: none; }
 
 /*****************
 BOOTSTRAP OVERRIDE
@@ -244,24 +255,23 @@ button, .button-group > button, .btn {
 /**********************
 BOOTSTRAP OVERRIDE END
 ***********************/
-.product-list .product-thumb .button-group {
-  border: none;
-  margin: 10px;
-  text-align: center; }
-
-.product-thumb .button-group button {
-  width: 100%;
-  background-color: #ED1C24;
-  color: #FFF;
-  border: 1px solid #ED1C24;
+.product-thumb #addcartdiv {
   text-align: center;
-  text-transform: uppercase; }
-  .product-thumb .button-group button:hover {
+  margin: 0 auto; }
+  .product-thumb #addcartdiv button {
+    background-color: #ED1C24;
     color: #FFF;
-    background-color: #E84F3C;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #E84F3C; }
+    border: 1px solid #ED1C24;
+    text-align: center;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto; }
+    .product-thumb #addcartdiv button:hover {
+      color: #FFF;
+      background-color: #E84F3C;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid #E84F3C; }
 
 /***********
 OWL CAROUSEL
@@ -279,7 +289,27 @@ MEDIA QUERIES
 ************/
 @media (max-width: 767px) {
   #logo2 {
-    display: block; } }
+    display: block; }
+
+  #addcartdiv {
+    width: 100%; }
+    #addcartdiv button {
+      width: 100%; } }
+@media (min-width: 768px) {
+  #addcartdiv {
+    width: 100%; }
+    #addcartdiv button {
+      width: 40%; } }
+@media (min-width: 992px) {
+  #addcartdiv {
+    width: 100%; }
+    #addcartdiv button {
+      width: 50%; } }
+@media (min-width: 1200px) {
+  #addcartdiv {
+    width: 100%; }
+    #addcartdiv button {
+      width: 60%; } }
 .dropdown ul li:hover {
   background-color: black; }
 
