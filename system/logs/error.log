@@ -164,3 +164,18 @@
 2015-03-17 19:56:48 - Export/Import: Missing product_ids in worksheet 'ProductOptionValues'!
 2015-03-17 19:56:48 - Export/Import: Missing product_ids in worksheet 'ProductAttributes'!
 2015-03-17 20:01:00 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 20:47:17 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 20:49:12 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 20:49:12 - PHP Notice:  Undefined variable: base in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 7
+2015-03-17 20:51:07 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 20:52:00 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 20:52:03 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 20:54:51 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 20:54:57 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 20:55:00 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 20:55:03 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 20:55:08 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 20:55:18 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 21:00:28 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 21:01:40 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-17 21:01:46 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/ecc/catalog/view/theme/eccnew/template/common/home.tpl on line 5

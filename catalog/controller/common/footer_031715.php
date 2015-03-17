@@ -31,14 +31,6 @@ class ControllerCommonFooter extends Controller {
 			}
 		}
 
-		if ($this->request->server['HTTPS']) {
-			$server = $this->config->get('config_ssl');
-		} else {
-			$server = $this->config->get('config_url');
-		}
-
-		$data['base'] = $server;
-		
 		$data['contact'] = $this->url->link('information/contact');
 		$data['return'] = $this->url->link('account/return/add', '', 'SSL');
 		$data['sitemap'] = $this->url->link('information/sitemap');
