@@ -147,7 +147,7 @@ ul{
 		background: $ecc-red-main;
 		li {
 			&:hover {
-			//	background-color: $ecc-red-dark;
+				background-color: $ecc-red-dark;
 			}
 		}
 	}
@@ -225,7 +225,7 @@ SIDE NAVS
 .dropdown-menu li > a:hover {
 	text-decoration: none;
 	color: #ffffff;
-	background-color: black;
+	background-color: $ecc-red-dark;
 	background-repeat: repeat-x;
 }
 
@@ -460,20 +460,6 @@ MEDIA QUERIES
 		width: 100%;
 		button {
 			width: 60%;
-		}
-	}
-}
-
-
-
-
-.dropdown{
-	ul {
-		li {
-			&:hover {
-					background-color: black;
-				}
-
 		}
 	}
 }

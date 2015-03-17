@@ -97,6 +97,8 @@ a {
 
 ul .dropdown-menu {
   background: #ED1C24; }
+  ul .dropdown-menu li:hover {
+    background-color: #BD2F2A; }
 
 #category {
   text-shadow: none; }
@@ -146,7 +148,7 @@ SIDE NAVS
 .dropdown-menu li > a:hover {
   text-decoration: none;
   color: #ffffff;
-  background-color: black;
+  background-color: #BD2F2A;
   background-repeat: repeat-x; }
 
 #cart .dropdown-menu {
@@ -310,7 +312,5 @@ MEDIA QUERIES
     width: 100%; }
     #addcartdiv button {
       width: 60%; } }
-.dropdown ul li:hover {
-  background-color: black; }
 
 /*# sourceMappingURL=custom.css.map */
