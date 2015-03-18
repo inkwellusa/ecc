@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <img id="heart" src="image/logos/logo1-white.svg">
+    <img id="heart" src="<?php echo $base; ?>image/logos/logo1-white.svg">
     <hr>
     <div class="row">
       
@@ -8,7 +8,7 @@
       
       <div class="col-sm-3">
         <ul class="list-unstyled footer-links">
-          <li><a href="<?php echo $contact; ?><?php echo $text_contact; ?>">Home</a></li>
+          <li><a href="<?php echo $base; ?>">Home</a></li>
           <li><a href="<?php echo $base;?>index.php?route=checkout/cart">Cart</a></li>
           <li><a href="<?php echo $base;?>index.php?route=account/account">Account</a></li>
         </ul>
