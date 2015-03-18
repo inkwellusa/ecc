@@ -629,7 +629,9 @@ $(document).ready(function() {
 
   var color = "";
   var logo = "";
-  var base = "http://localhost:8888/ecc/image/catalog/demo/";
+  //var base = "http://localhost:8888/ecc/image/catalog/demo/";
+  var base = "<?php echo $base;?>" + "image/catalog/demo/";
+
   var productModel = document.getElementById("product-model").innerHTML;
   function createNewSRC(picsrc, colorValue, logoValue){
     
