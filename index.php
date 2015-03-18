@@ -7,10 +7,10 @@ define('VERSION', '2.0.0.0');
 if (in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'))) {
 	if (is_file('local.config.php')) {
 		require_once('local.config.php');
-	} else (is_file('config.php')) {
-		require_once('config.php');
-	}
-} 
+	} 
+} else (is_file('config.php')) {
+	require_once('config.php');
+}
 
 // Install
 if (!defined('DIR_APPLICATION')) {
