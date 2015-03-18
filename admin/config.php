@@ -5,7 +5,7 @@ define('HTTP_CATALOG', 'http://eccstore.inkwellusa.com/');
 
 // HTTPS
 define('HTTPS_SERVER', 'https://eccstore.inkwellusa.com/admin/');
-define('HTTPS_CATALOG', 'https://eccstore.inkwellusa.com');
+define('HTTPS_CATALOG', 'https://eccstore.inkwellusa.com/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/vhosts/inkwellusa.com/subdomains/admin/');

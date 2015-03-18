@@ -1,9 +1,9 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://eccstore.inkwellusa.com');
+define('HTTP_SERVER', 'http://eccstore.inkwellusa.com/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://eccstore.inkwellusa.com');
+define('HTTPS_SERVER', 'https://eccstore.inkwellusa.com/');
 
 // DIR
 define('DIR_APPLICATION', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/');
