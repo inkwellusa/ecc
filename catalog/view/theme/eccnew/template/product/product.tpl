@@ -190,10 +190,10 @@
 
             <div class="form-group<?php echo ($option['required'] ? ' required' : ''); ?>">
               <label class="control-label" for="input-option<?php echo $option['product_option_id']; ?>"><?php echo $option['name']; ?></label>
-              <select name="option[<?php echo $option['product_option_id']; ?>]" id="input-option<?php echo $option['product_option_id']; ?>" class="form-control">
+              <select name="option[<?php echo $option['product_option_id']; ?>]" id="input-option<?php echo $option['product_option_id']; ?>" class="form-control <?php echo $coloroption; ?>">
                 <option value=""><?php echo $text_select; ?></option>
                 <?php foreach ($option['product_option_value'] as $option_value) { ?>
-                <option class="<?php echo $coloroption; ?>" rel="<?php echo $option_value['name']; ?>" value="<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['name']; ?>
+                <option class="" rel="<?php echo $option_value['name']; ?>" value="<?php echo $option_value['product_option_value_id']; ?>"><?php echo $option_value['name']; ?>
                 <?php if ($option_value['price']) { ?>
                 (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
                 <?php } ?>
@@ -663,16 +663,18 @@ $(document).ready(function() {
     if((colorValue) && (logoValue))  {
       src = $('#main-product-thumb').attr('src');
       createNewSRC(src, colorValue, logoValue);
-    } 
+    }
   }
 
 
 /*
 listen for changes on the color drop down
 */
-$('.coloroption').click(
+$('.coloroption').change(
   function() {
-    var newColor = $(this).attr('rel');
+    //this only works in FF
+    // var newColor = $(this).attr('rel');
+    var newColor = $(this).find('option:selected').attr('rel');
     color = newColor;
     checkValues(color, logo);
   });
