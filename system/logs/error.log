@@ -569,3 +569,4 @@
 2015-03-19 16:19:32 - PHP Notice:  Undefined variable: class in /var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
 2015-03-19 16:21:08 - PHP Notice:  Undefined variable: class in /var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
 2015-03-19 16:21:18 - PHP Notice:  Undefined variable: class in /var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-19 16:22:59 - PHP Notice:  Undefined variable: class in /var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5

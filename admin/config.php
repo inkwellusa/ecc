@@ -8,18 +8,18 @@ define('HTTPS_SERVER', 'https://eccstore.inkwellusa.com/admin/');
 define('HTTPS_CATALOG', 'https://eccstore.inkwellusa.com/');
 
 // DIR
-define('DIR_APPLICATION', '/var/www/vhosts/inkwellusa.com/subdomains/admin/');
-define('DIR_SYSTEM', '/var/www/vhosts/inkwellusa.com/subdomains/system/');
-define('DIR_LANGUAGE', '/var/www/vhosts/inkwellusa.com/subdomains/admin/language/');
-define('DIR_TEMPLATE', '/var/www/vhosts/inkwellusa.com/subdomains/admin/view/template/');
-define('DIR_CONFIG', '/var/www/vhosts/inkwellusa.com/subdomains/system/config/');
-define('DIR_IMAGE', '/var/www/vhosts/inkwellusa.com/subdomains/image/');
-define('DIR_CACHE', '/var/www/vhosts/inkwellusa.com/subdomains/system/cache/');
-define('DIR_DOWNLOAD', '/var/www/vhosts/inkwellusa.com/subdomains/system/download/');
-define('DIR_UPLOAD', '/var/www/vhosts/inkwellusa.com/subdomains/system/upload/');
-define('DIR_LOGS', '/var/www/vhosts/inkwellusa.com/subdomains/system/logs/');
-define('DIR_MODIFICATION', '/var/www/vhosts/inkwellusa.com/subdomains/system/modification/');
-define('DIR_CATALOG', '/var/www/vhosts/inkwellusa.com/subdomains/catalog/');
+define('DIR_APPLICATION', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/admin/');
+define('DIR_SYSTEM', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/');
+define('DIR_LANGUAGE', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/admin/language/');
+define('DIR_TEMPLATE', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/admin/view/template/');
+define('DIR_CONFIG', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/config/');
+define('DIR_IMAGE', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/image/');
+define('DIR_CACHE', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/cache/');
+define('DIR_DOWNLOAD', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/download/');
+define('DIR_UPLOAD', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/upload/');
+define('DIR_LOGS', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/logs/');
+define('DIR_MODIFICATION', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/modification/');
+define('DIR_CATALOG', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/');
 
 // DB
 define('DB_DRIVER', 'mysqli');
