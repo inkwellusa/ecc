@@ -12,7 +12,7 @@ define('DIR_LANGUAGE', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/catal
 define('DIR_TEMPLATE', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/view/theme/');
 define('DIR_CONFIG', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/config/');
 define('DIR_IMAGE', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/image/');
-define('DIR_CACHE', '/var/www/vhosts/inkwellusa.com/subdomains/system/cache/');
+define('DIR_CACHE', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/cache/');
 define('DIR_DOWNLOAD', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/download/');
 define('DIR_UPLOAD', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/upload/');
 define('DIR_MODIFICATION', '/var/www/vhosts/inkwellusa.com/subdomains/eccstore/system/modification/');
