@@ -1,6 +1,6 @@
 <footer>
   <div class="container">
-    <img id="heart" src="<?php echo $base; ?>image/logos/logo1-white.svg">
+    <img id="heart" src="<?php echo $base; ?>image/logos/logo1-white.png">
     <hr>
     <div class="row">
       
