@@ -607,3 +607,18 @@
 2015-03-19 17:50:23 - PHP Notice:  Undefined variable: class in /var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
 2015-03-19 17:51:14 - PHP Notice:  Undefined variable: class in /var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
 >>>>>>> 9a1720f2b025041620ad162b1ae23b628f99a177
+2015-03-23 16:25:45 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 16:25:48 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 16:27:38 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 16:27:55 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 16:28:01 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 16:28:52 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 16:29:37 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 16:29:46 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 16:29:48 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 16:30:15 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 16:30:20 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 17:12:03 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 17:12:07 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 17:12:11 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-23 17:12:27 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5

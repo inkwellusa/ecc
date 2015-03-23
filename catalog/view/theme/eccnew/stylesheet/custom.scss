@@ -116,18 +116,32 @@ a { color: $ecc-red-main;
 
 	background-color: $ecc-red-main;
 	border: solid $ecc-red-main 1px;
-	// background: transparent;
-	// border: none;
 
 	.navbar-header, .navbar-ex1-collapse {
 		background-color: $ecc-red-main;
 		border: solid $ecc-red-main 1px;
-		// background: transparent;
-		// border: none;
+		border: none;
+
 		text-shadow: none;
 		span { text-shadow:none;}
 		box-shadow: none;
-		ul li a  { color: #FFF; }
+		padding: 0;
+		margin: 0;
+		ul{
+			.dropdown-menu {
+				background: $ecc-red-main;
+				margin: 0;
+				padding: 0;
+					li a{
+						color: #FFF;
+					&:hover {
+						background-image: none;
+						background-color: $ecc-red-dark;
+					}
+				}
+			}
+		}
+
 	}
 
 	.btn-navbar {
@@ -140,16 +154,6 @@ a { color: $ecc-red-main;
 		border: none;
 		box-shadow: none;
 		&:hover {background: transparent;}
-	}
-}
-ul{
-	.dropdown-menu {
-		background: $ecc-red-main;
-		li {
-			&:hover {
-				background-color: $ecc-red-dark;
-			}
-		}
 	}
 }
 
