@@ -280,6 +280,9 @@ BOOTSTRAP OVERRIDE END
       cursor: pointer;
       border: 1px solid #E84F3C; }
 
+.thumbnails li a:hover {
+  border-color: #E84F3C; }
+
 /***********
 OWL CAROUSEL
 ***********/

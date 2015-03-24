@@ -403,6 +403,14 @@ BOOTSTRAP OVERRIDE END
 	}
 }
 
+.thumbnails {
+	li  a{
+		&:hover {
+		border-color: $ecc-red-light;
+	}
+	}
+}
+
 
 /***********
 OWL CAROUSEL
