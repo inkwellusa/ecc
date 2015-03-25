@@ -652,6 +652,9 @@ $(document).ready(function() {
       case 'AHA Instructor':
         logoNum = '_5.jpg';
         break;
+      case 'No Logo':
+        logoNum = '_6.jpg';
+        break;
 
     }
     picsrc = base + productModel + "_" + colorValue + logoNum;
