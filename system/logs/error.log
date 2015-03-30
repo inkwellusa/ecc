@@ -632,3 +632,4 @@
 2015-03-26 15:19:12 - Export/Import: Missing product_ids in worksheet 'ProductOptionValues'!
 2015-03-26 15:19:12 - Export/Import: Missing product_ids in worksheet 'ProductAttributes'!
 2015-03-26 15:37:06 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-03-30 15:43:11 - PHP Notice:  Undefined variable: class in /var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
