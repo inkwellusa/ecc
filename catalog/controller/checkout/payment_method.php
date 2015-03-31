@@ -47,6 +47,7 @@ class ControllerCheckoutPaymentMethod extends Controller {
 
 		$data['text_payment_method'] = $this->language->get('text_payment_method');
 		$data['text_comments'] = $this->language->get('text_comments');
+		$data['text_comments2'] = $this->language->get('text_comments2');
 		$data['text_loading'] = $this->language->get('text_loading');
 
 		$data['button_continue'] = $this->language->get('button_continue');
