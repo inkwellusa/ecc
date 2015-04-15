@@ -309,16 +309,16 @@ MEDIA QUERIES
   #addcartdiv {
     width: 100%; }
     #addcartdiv button {
-      width: 40%; } }
+      width: 100%; } }
 @media (min-width: 992px) {
   #addcartdiv {
     width: 100%; }
     #addcartdiv button {
-      width: 50%; } }
+      width: 100%; } }
 @media (min-width: 1200px) {
   #addcartdiv {
     width: 100%; }
     #addcartdiv button {
-      width: 60%; } }
+      width: 100%; } }
 
 /*# sourceMappingURL=custom.css.map */
