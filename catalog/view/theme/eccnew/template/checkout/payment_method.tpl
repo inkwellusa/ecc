@@ -20,9 +20,9 @@
 </div>
 <?php } ?>
 <?php } ?>
-<p><strong><?php echo $text_comments; ?></strong></p>
+<p><strong><?php echo $text_comments2; ?></strong></p>
 <p>
-  <textarea name="comment" rows="8" class="form-control"><?php echo $comment; ?></textarea>
+  <input name="comment" rows="8" class="form-control"><?php echo $comment; ?></input>
 </p>
 <?php if ($text_agree) { ?>
 <div class="buttons">
