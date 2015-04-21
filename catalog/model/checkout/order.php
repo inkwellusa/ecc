@@ -674,7 +674,14 @@ class ModelCheckoutOrder extends Model {
 				}
 
 				// Admin Alert Mail
-				if ($this->config->get('config_order_mail')) {
+				// $mail->setTo($this->config->get(‘config_email’));
+				// $mail->send();
+				
+				// if ($this->config->get('config_order_mail')) {
+				//EDIT MM 042115 always send admin email
+				
+				$bool = true;
+				if ($bool) {
 					$subject = sprintf($language->get('text_new_subject'), html_entity_decode($this->config->get('config_name'), ENT_QUOTES, 'UTF-8'), $order_id);
 
 					// HTML Mail
