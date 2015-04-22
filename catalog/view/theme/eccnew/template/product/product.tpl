@@ -134,7 +134,8 @@
           <h1><?php echo $heading_title; ?></h1>
           <ul class="list-unstyled">
             <?php if ($manufacturer) { ?>
-            <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li>
+            <?php //EDIT MM 042215// remove brand/manufacturer ?>
+            <!-- <li><?php echo $text_manufacturer; ?> <a href="<?php echo $manufacturers; ?>"><?php echo $manufacturer; ?></a></li> -->
             <?php } ?>
             <li><?php echo $text_model; ?> <span id ="product-model"><?php echo $model; ?></span></li>
             <?php if ($reward) { ?>
