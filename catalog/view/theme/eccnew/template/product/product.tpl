@@ -26,7 +26,7 @@
           <?php if ($thumb || $images) { ?>
           <ul class="thumbnails">
             <?php if ($thumb) { ?>
-            <li><a class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img width="500px" id ="main-product-thumb" src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
+            <li><a id="main-product-thumb-container" class="thumbnail" href="<?php echo $popup; ?>" title="<?php echo $heading_title; ?>"><img width="500px" id ="main-product-thumb" src="<?php echo $thumb; ?>" title="<?php echo $heading_title; ?>" alt="<?php echo $heading_title; ?>" /></a></li>
             <?php } ?>
             <?php if ($images) { ?>
             <?php foreach ($images as $image) { ?>
@@ -660,7 +660,7 @@ $(document).ready(function() {
     }
     picsrc = base + productModel + "_" + colorValue + logoNum;
     $("#main-product-thumb").attr('src', picsrc);
-    $(".thumbnail").attr('href', picsrc);
+    $("#main-product-thumb-container").attr('href', picsrc);
   }
 
   function checkValues(colorValue, logoValue) {
