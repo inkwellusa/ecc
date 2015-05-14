@@ -262,6 +262,12 @@ button, .button-group > button, .btn {
 /**********************
 BOOTSTRAP OVERRIDE END
 ***********************/
+.product-thumb .caption {
+  min-height: 250px; }
+  .product-thumb .caption h4 {
+    min-height: 50px; }
+  .product-thumb .caption p {
+    min-height: 50px; }
 .product-thumb #addcartdiv {
   text-align: center;
   margin: 0 auto; }

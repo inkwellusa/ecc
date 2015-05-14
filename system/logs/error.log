@@ -23,3 +23,13 @@
 2015-05-14 16:52:42 - PHP Notice:  Undefined variable: class in /var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
 2015-05-14 16:52:54 - PHP Notice:  Undefined variable: class in /var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
 2015-05-14 16:57:18 - PHP Notice:  Undefined variable: class in /var/www/vhosts/inkwellusa.com/subdomains/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-05-14 19:50:33 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-05-14 21:35:49 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-05-14 21:44:54 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-05-14 21:47:26 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-05-14 21:51:06 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-05-14 21:51:17 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-05-14 21:51:26 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-05-14 21:51:28 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-05-14 21:51:29 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5
+2015-05-14 21:51:32 - PHP Notice:  Undefined variable: class in /Applications/MAMP/htdocs/eccstore/catalog/view/theme/eccnew/template/common/home.tpl on line 5

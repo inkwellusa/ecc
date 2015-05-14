@@ -381,6 +381,16 @@ BOOTSTRAP OVERRIDE END
 	// 	margin: 10px;
 	// 	text-align: center;
 	// 	// width:100px;
+
+	.caption {
+		h4{
+			min-height:50px;
+		}
+		p {
+			min-height:50px;
+		}
+		min-height: 250px;
+	}
  #addcartdiv{
  	@include center;
 		button {
